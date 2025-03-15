@@ -1,0 +1,31 @@
+{
+    "company": {
+        "name": "Poridhi",
+        "address": {
+            "street": "123 Tech Lane", 
+            "city": "Dhaka",
+            "state": "Dhaka",
+            "postal_code": "1200"
+        }, 
+        "employees": [
+            {
+                "id": 1, 
+                "name": "emp1", 
+                "position": "Junior Software Engineer", 
+                "contact": {
+                    "email": "emp1@poridhi.com", 
+                    "phone": "01234563020"
+                }
+            }, 
+            {
+                "id": 2, 
+                "name": "emp2", 
+                "position": "Data Scientist", 
+                "contact": {
+                    "email": "emp2@poridhi.com", 
+                    "phone": "01234563121"
+                }
+            }
+        ]
+    }
+}
