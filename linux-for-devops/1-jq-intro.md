@@ -96,7 +96,11 @@ ummey@linux-for-devops % cat data.json| jq '.company.employees[1].contact'
 ```
 ummey@linux-for-devops % cat data.json| jq '.company.employees[1].contact.email'
 "emp2@poridhi.com"
+
+ummey@linux-for-devops % cat data.json| jq '.company.employees[1].contact.email'> output.json
 ```
+By adding ` > output.json` we are telling it to send the output to this file. We can use this file to again extract, filter data using `jq`. This is how we can make a pipeline of commands using `jq`. 
+
 ## Task 2: Listing All Employee Names
 ```
 ummey@linux-for-devops % cat data.json| jq '.company.employees[].name'         

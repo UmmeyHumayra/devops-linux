@@ -10,3 +10,7 @@
 9. Mastering Redirection in Bash Scripting
 10. AWS VPC Infrastructure Creation using Bash Script
 11. AWS EC2 Infrastructure with Bash Script
+
+## Notes on Topic
+### stdout
+cat data.json -> loads data to RAM, the output is sent to `stdout`. `stdout` is such a stream that when we `cat` some file the data will be shown from this `stdout` stream to our terminal. 
