@@ -1,7 +1,7 @@
 # Arrays in Bash Scripting
 ## Goal
 Learn how to declare, manipulate, and iterate over arrays for scripting. 
-![alt text](5-arrays-in-bash-scripting-image1.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image1.png)
 
 By the end of the lab, the goal is to be able to accomplish following tasks: 
 - Declaring and initializing arrays
@@ -31,7 +31,7 @@ books=(
 )
 echo "Books: ${books[@]}"
 ```
-![alt text](5-arrays-in-bash-scripting-image2.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image2.png)
 
 ### Accessing Array Elements
 Access elements in array using indices (starting at 0):
@@ -47,7 +47,7 @@ echo "All elements: ${colors[@]}"
 echo "Indices: ${!colors[@]}"
 echo "Number of elements: ${#colors[@]}"
 ```
-![alt text](5-arrays-in-bash-scripting-image3.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image3.png)
 
 ### Modifying Arrays
 Add, update, or remove elements dynamically: 
@@ -71,7 +71,7 @@ echo "After updating: ${languages[@]}"
 unset languages[2]
 echo "After removing: ${languages[@]}"
 ```
-![alt text](5-arrays-in-bash-scripting-image4.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image4.png)
 
 ### Iterating Through Arrays
 Loop through arrays using for loops:
@@ -92,12 +92,12 @@ for team in "${teams[@]}"; do
     echo "Processing $team..."
 done
 ```
-![alt text](5-arrays-in-bash-scripting-image5.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image5.png)
 
 ## Associative Arrays (Bash 4+)
 An associative array in Bash is a type of array that allows to use string keys instead of just numeric indices. This means values can be stored and retrieved using meaningful names rather numbers/indices. 
 
-![alt text](5-arrays-in-bash-scripting-image6.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image6.png)
 
 ### Syntax
 ```
@@ -121,4 +121,4 @@ echo "Tanjiro's role: ${user_roles["Tanjiro"]}"
 echo "All users: ${!user_roles[@]}"
 echo "All roles: ${user_roles[@]}"
 ```
-![alt text](5-arrays-in-bash-scripting-image7.png)
+![alt text](5-arrays-folder/5-arrays-in-bash-scripting-image7.png)
